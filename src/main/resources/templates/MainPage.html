@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내곁의 응급실</title>
+  <link rel="stylesheet" href="/static/css/MainPage.css">
+</head>
+<body>
+<header>
+  <div id="banner"></div>
+</header>
+<div id = "body-area">
+  <div id="search-area">
+    <input type="text" id="address-input" placeholder="주소를 입력하세요">
+    <button id="search-btn">확인</button>
+    <button id="location-btn">🎯</button>
+  </div>
+  <section>
+    <table id="hospital-table">
+      <thead>
+      <tr>
+        <th id="hospital-name">병원 이름</th>
+        <th id="adult-emer">성인 응급실</th>
+        <th id="child-emer">소아 응급실</th>
+        <th id="hospital-distance">거리</th>
+        <th id="hospital-add">주소</th>
+      </tr>
+      </thead>
+      <tbody>
+        <!-- 예시 데이터 행 -->
+        <tr>
+            <td>중앙대학교병원</td>
+            <td>3</td>
+            <td>2</td>
+            <td>5km</td>
+            <td>주소1</td>
+        </tr>
+        <tr>
+            <td>서울대학교병원</td>
+            <td>5</td>
+            <td>3</td>
+            <td>8km</td>
+            <td>주소1</td>
+        </tr>
+        <tr>
+            <td>연세대학교 세브란스병원</td>
+            <td>4</td>
+            <td>2</td>
+            <td>7km</td>
+            <td>주소1</td>
+        </tr>
+        <!-- 추가 데이터 행 -->
+    </tbody>
+    </table>
+  </section>
+  <section id = "distance-section">
+    <p>내 위치 기준으로</p>
+      <select id="distance-selector">
+      <option value="50">50km</option>
+      <!-- 추가적인 옵션 -->
+    </select> 
+    <p>이내의 병원을 검색합니다.</p>
+  </section>
+</div>
+<footer>
+
+</footer>
+</body>
+</html>
